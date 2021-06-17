@@ -1,0 +1,33 @@
+body{
+    font-size: 16px;
+    line-height: 100px;
+}
+h1{
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    text-decoration: underline;
+    text-align: right;
+}
+ul{
+    background-color: peru;
+    line-height: 30px;
+}
+p{
+    font-weight: 600;
+    font-size: 3em;
+    font-style: italic;
+    line-height: 60px;
+}
+.favorite-color{
+    background-color: powderblue;
+}
+#Amarelo{
+    color: yellow;
+}
+#Vermelho{
+    color: red
+}
+#marrom{
+    color: brown
+}
