@@ -31,4 +31,7 @@ switch (a.toLowerCase()) {
     case "pawn":
         console.log("Move (or capture) one square in any direction");
         break;
+    default:
+        console.log("Error");
+        break;
 }
