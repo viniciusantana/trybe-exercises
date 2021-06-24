@@ -34,6 +34,8 @@ let salarioBruto = 3000;
 let salarioLiquido;
 let aliquotaINSS;
 let descontoINSS;
+let aliquotaIRPF;
+let descontoIRPF;
 
 if (salarioBruto <= 1556.94) {
     aliquotaINSS = 8;
@@ -47,12 +49,82 @@ if (salarioBruto <= 1556.94) {
     aliquotaINSS = 11;
     descontoINSS = salarioBruto * (aliquotaINSS / 100);
     salarioLiquido = salarioBruto - descontoINSS;
-} else{
+} else {
     aliquotaINSS = "MAX";
     descontoINSS = 570.88;
     salarioLiquido = salarioBruto;
 }
 
-console.log(aliquotaINSS);
-console.log(descontoINSS);
-console.log(salarioLiquido);
+console.log('Aliquota INSS: ',aliquotaINSS);
+console.log('Desconto INSS: R$',descontoINSS);
+/*console.log('Salário apenas com desconto do INSS' ,salarioLiquido); */
+
+/*
+>>IR (Imposto de Renda)
+    -Até R$ 1.903,98: isento de imposto de renda
+    -De R$ 1.903,99 a 2.826,65: alíquota de 7,5% e parcela de R$ 142,80 a deduzir do imposto
+    -De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir do imposto
+    -De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
+    -Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.
+*/
+
+if (salarioLiquido <= 1903.98) {
+    aliquotaIRPF = 0;
+    descontoIRPF = salarioLiquido * (aliquotaIRPF / 100);
+    salarioLiquido -= descontoIRPF;
+} else if (salarioLiquido <= 2826.65) {
+    aliquotaIRPF = 7.5;
+    descontoIRPF = salarioLiquido * (aliquotaIRPF / 100) - 142.80;
+    salarioLiquido -= descontoIRPF;
+} else if (salarioLiquido <= 3751.05) {
+    aliquotaIRPF = 15;
+    descontoIRPF = salarioLiquido * (aliquotaIRPF / 100) - 354.8;
+    salarioLiquido -= descontoIRPF;
+} else if (salarioLiquido <= 4664.68) {
+    aliquotaIRPF = 22.5;
+    descontoIRPF = salarioLiquido * (aliquotaIRPF / 100) - 636.13;
+    salarioLiquido -= descontoIRPF;
+} else {
+    aliquotaIRPF = 27.5;
+    descontoIRPF = salarioLiquido * (aliquotaIRPF / 100) - 869.36;
+    salarioLiquido -= descontoIRPF;
+}
+
+console.log('Alíquota IRPF:' , aliquotaIRPF, '%');
+console.log('Total decontado do IRPF: R$', descontoIRPF);
+console.log('Salário Líquido',salarioLiquido);
+
+/*
+Resposta site:
+
+let aliquotINSS;
+let aliquotIR;
+
+let grossSalary = 2000.00;
+
+if (grossSalary <= 1556.94) {
+  aliquotINSS = grossSalary * 0.08;
+} else if (grossSalary <= 2594.92) {
+  aliquotINSS = grossSalary * 0.09;
+} else if (grossSalary <= 5189.82) {
+  aliquotINSS = grossSalary * 0.11;
+} else {
+  aliquotINSS = 570.88;
+}
+
+let baseSalary = grossSalary - aliquotINSS;
+
+if (baseSalary <= 1903.98) {
+  aliquotIR = 0;
+} else if (baseSalary <= 2826.65) {
+  aliquotIR = (baseSalary * 0.075) - 142.80;
+} else if (baseSalary <= 3751.05) {
+  aliquotIR = (baseSalary * 0.15) - 354.80;
+} else if (baseSalary <= 4664.68) {
+  aliquotIR = (baseSalary * 0.225) - 636.13;
+} else {
+  aliquotIR = (baseSalary * 0.275) - 869.36;
+};
+
+console.log("Salário: " + (baseSalary - aliquotIR));
+*/
