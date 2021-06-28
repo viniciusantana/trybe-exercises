@@ -8,7 +8,7 @@
  
 function maiorValor (inteiros){
     let maior = 0;
-    for(index = 1; index < inteiros.length - 1; index++){
+    for(index = 1; index < inteiros.length; index++){
         if( inteiros[maior] < inteiros[index]){
             maior = index;
         }
