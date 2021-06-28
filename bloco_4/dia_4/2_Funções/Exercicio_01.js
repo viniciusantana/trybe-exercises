@@ -25,4 +25,5 @@ function Palindrome (name){
 
 }
 
-console.log(Palindrome('aaa'));
+console.log(Palindrome('arara'));
+console.log(Palindrome('desenvolvimento'));
