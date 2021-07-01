@@ -42,32 +42,42 @@
       </section>
     </main>
     <script>
-        document.getElementsByTagName('p')[0].innerText = 'Eu me vejo feliz e bem comigo mesmo';
-        document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
-        document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
-        document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
-        //document.getElementsByTagName('p')[0].innerText = 'Eu me vejo feliz e bem comigo mesmo'.toUpperCase();
-        let maiuscula = document.getElementsByTagName('p');
-        for( let i = 0; i < maiuscula.length; i += 1){
-            maiuscula[i].innerText = maiuscula[i].innerText.toUpperCase();
-        }
-        for( let i = 0; i < maiuscula.length; i += 1){
-             console.log(maiuscula[i].innerText);
-        }
-
-
+        //EXERCÍCIO REFATORADO
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
         - document.getElementsByClassName()
         - document.getElementsByTagName()
- (ok)Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
- (ok)Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
- (ok)Crie uma função que mude a cor do quadrado vermelho para branco.
- (ok)Crie uma função que corrija o texto da tag <h1>.
- (ok)Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- (ok)Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        1.(ok)Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+        2.(ok)Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+        3.(ok)Crie uma função que mude a cor do quadrado vermelho para branco.
+        4.(ok)Crie uma função que corrija o texto da tag <h1>.
+        5.(ok)Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+        6.(ok)Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+       //EXERCÍCIO 01
+       //document.getElementsByTagName('p')[0].innerText = 'Eu me vejo feliz e bem comigo mesmo';
+       function novotexto (texto){
+           let textoTag = document.getElementsByTagName('p');
+           textoTag[1].innerText = texto;
+       }
+       novotexto('Feliz');
+       //EXERCÍCIO 02
+       document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
+       //EXERCÍCIO 03
+       document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
+        //EXERCÍCIO 04
+        document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
+        //EXERCÍCIO 05
+        //document.getElementsByTagName('p')[0].innerText = 'Eu me vejo feliz e bem comigo mesmo'.toUpperCase();
+        let maiuscula = document.getElementsByTagName('p');
+        for( let i = 0; i < maiuscula.length; i += 1){
+            maiuscula[i].innerText = maiuscula[i].innerText.toUpperCase();
+        }
+        //EXERCÍCIO 06
+        for( let i = 0; i < maiuscula.length; i += 1){
+             console.log(maiuscula[i].innerText);
+        }
     </script>
   </body>
 </html>
