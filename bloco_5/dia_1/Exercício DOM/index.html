@@ -55,15 +55,20 @@
         5.(ok)Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
         6.(ok)Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-       //EXERCÍCIO 01
+       //EXERCÍCIO 01 (Anteiror/Novo)
        //document.getElementsByTagName('p')[0].innerText = 'Eu me vejo feliz e bem comigo mesmo';
-       function novotexto (texto){
+       function novoTexto (texto){
            let textoTag = document.getElementsByTagName('p');
            textoTag[1].innerText = texto;
        }
-       novotexto('Feliz');
+       novoTexto('Feliz');
        //EXERCÍCIO 02
-       document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
+       //document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
+       function mudaCorQuadrado() {
+           let mainContentClass = document.getElementsByClassName('main-content')[0];
+           mainContentClass.style.background = "rgb(76,164,109)";
+       }
+       mudaCorQuadrado();
        //EXERCÍCIO 03
        document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
         //EXERCÍCIO 04
