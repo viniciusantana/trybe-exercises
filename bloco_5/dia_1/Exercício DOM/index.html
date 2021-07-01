@@ -46,6 +46,12 @@
         document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
         document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
         document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
+        //document.getElementsByTagName('p')[0].innerText = 'Eu me vejo feliz e bem comigo mesmo'.toUpperCase();
+        let maiuscula = document.getElementsByTagName('p');
+        for( let i = 0; i < maiuscula.length; i += 1){
+            maiuscula[i].innerText = maiuscula[i].innerText.toUpperCase();
+        }
+
 
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
@@ -56,7 +62,7 @@
  (ok)Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
  (ok)Crie uma função que mude a cor do quadrado vermelho para branco.
  (ok)Crie uma função que corrija o texto da tag <h1>.
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+ (ok)Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
     </script>
