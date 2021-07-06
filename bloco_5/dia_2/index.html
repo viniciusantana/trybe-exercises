@@ -58,38 +58,56 @@
   <body>
     <script>
       
-    //Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+    //1.Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
     let hh1 = document.createElement('h1');
     hh1.innerHTML = 'Olatudo bem';
     document.body.appendChild(hh1);
-    //Adicione a tag div com a classe main-content como filho da tag body ;
+    //2.Adicione a tag div com a classe main-content como filho da tag body ;
     let div = document.createElement('div');
     div.className = 'main-content';
     document.body.appendChild(div);
 
-    //Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+    //3.Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
     let div2 = document.createElement('div');
     div2.className = 'center-content';
     document.body.lastChild.appendChild(div2);
 
-    //Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+    //4.Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
     let p = document.createElement('p');
     div2.appendChild(p);
 
-    //Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
+    //5.Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
     let div3 = document.createElement('div');
     div3.className = 'left-content';
     div.appendChild(div3);
 
-    //Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
+    //6.Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
     let divRight = document.createElement('div');
     divRight.className = 'right-content';
     div.appendChild(divRight);
-    //Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
 
-    //Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+    //7.Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
+    let imagem = document.createElement('img');
+    imagem.className = 'small-image';
+    imagem.src = 'https://picsum.photos/200';
+    div3.appendChild(imagem);
 
-    //Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+
+    //8.Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+    let ul = document.createElement('ul');
+    divRight.appendChild(ul);
+    for (let index = 0; index < 10; index++) {
+      let lista = document.createElement('li');
+      lista.innerText = index + 1;
+      ul.appendChild(lista);
+    }
+
+    //9.Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+    let H3 = [];
+    for (let index = 0; index < 3; index += 1) {
+      H3[index] = document.createElement('h3');
+      div.appendChild(H3[index]);
+    }
 
     </script>
   </body>
