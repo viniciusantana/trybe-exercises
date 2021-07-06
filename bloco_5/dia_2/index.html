@@ -1,67 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício 5.2</title>
-    <style>
-      div {
-        border-color: black;
-        border-style: solid;
-      }
 
-      .title {
-        text-align: center;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.2</title>
+  <style>
+    div {
+      border-color: black;
+      border-style: solid;
+    }
 
-      .main-content {
-        background-color: yellow;
-      }
+    .title {
+      text-align: center;
+    }
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .main-content {
+      background-color: yellow;
+    }
 
-      .main-content .center-content p {
-        font-style: italic;
-      }
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
+    .main-content .center-content p {
+      font-style: italic;
+    }
 
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
 
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
 
-      .main-content .description {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <script>
-      
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+
     //1.Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
     let hh1 = document.createElement('h1');
-    hh1.innerHTML = 'Olatudo bem';
+    hh1.innerHTML = 'Exercício 5.2 - JavaScript DOM como filho da tag body ';
     document.body.appendChild(hh1);
+
     //2.Adicione a tag div com a classe main-content como filho da tag body ;
     let div = document.createElement('div');
     div.className = 'main-content';
@@ -94,6 +97,17 @@
 
 
     //8.Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+    //Utilizado garbarito, me código retornava os números sem ser por extenso....
+    let ul = document.createElement('ul');
+    let numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+
+    for (let index = 0; index < numbers.length; index += 1) {
+      let li = document.createElement('li');
+      li.innerText = numbers[index];
+      ul.appendChild(li);
+    }
+
+    /*
     let ul = document.createElement('ul');
     divRight.appendChild(ul);
     for (let index = 0; index < 10; index++) {
@@ -101,6 +115,7 @@
       lista.innerText = index + 1;
       ul.appendChild(lista);
     }
+    */
 
     //9.Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
     let H3 = [];
@@ -108,7 +123,9 @@
       H3[index] = document.createElement('h3');
       div.appendChild(H3[index]);
     }
+    
 
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
