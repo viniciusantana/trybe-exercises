@@ -106,6 +106,7 @@
       li.innerText = numbers[index];
       ul.appendChild(li);
     }
+    divRight.appendChild(ul)
 
     /*
     let ul = document.createElement('ul');
@@ -145,6 +146,14 @@
     div2.style.background = 'green';
 
     //6.Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+    let numeros = document.querySelectorAll('li');
+
+    for (let index = 0; index < numeros.length; index += 1) {
+      if (numeros[index].innerText.includes('Nove')){
+        //ul.removeChild(numeros[index]);
+        document.querySelector('ul').removeChild(numeros[index]);
+      }
+    }
 
 
 
