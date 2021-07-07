@@ -97,7 +97,35 @@ const fridayButton = document.getElementById('btn-friday');
 const fridays = document.getElementsByClassName('friday');
 fridayButton.addEventListener('click', function(){
     for(let index = 0; index < fridays.length; index += 1) {
-        fridays[index].style.background = 'yellow';
+        if(fridays[index].innerHTML === 'Sextou'){
+            fridays[index].innerHTML = index * 7 + 4;
+        }else {
+            fridays[index].innerHTML = 'Sextou';
+        }
     }
-    
 })
+
+/*
+ 6.Implemente duas funções que criem um efeito de "zoom". 
+ Ao passar o ponteiro do mouse em um dia do mês no calendário, 
+ o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia,
+ o texto deve retornar ao tamanho original. 
+*/
+const days = document.querySelectorAll('.day');
+
+for(let index = 0; index < days.length; index += 1){
+    days[index].addEventListener('mouseover', Zoom);
+    days[index].addEventListener('mouseout', noZoom);
+    console.log(days[index]);
+}
+
+
+function Zoom(event){
+    event.target.style.color = 'blue';
+    event.target.style.fontSize = '30px';
+}
+function noZoom(event){
+    event.target.style.color = '';
+    event.target.style.fontSize = '';
+}
+
