@@ -116,16 +116,32 @@ const days = document.querySelectorAll('.day');
 for(let index = 0; index < days.length; index += 1){
     days[index].addEventListener('mouseover', Zoom);
     days[index].addEventListener('mouseout', noZoom);
-    console.log(days[index]);
+    //console.log(days[index]);
 }
 
 
 function Zoom(event){
     event.target.style.color = 'blue';
-    event.target.style.fontSize = '30px';
+    event.target.style.fontSize = '25px';
 }
 function noZoom(event){
     event.target.style.color = '';
     event.target.style.fontSize = '';
 }
+
+/*
+ 7.Implemente uma função que adiciona uma tarefa personalizada ao calendário.
+ A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar")
+ e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+ O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe
+ "my-tasks".
+*/
+
+function tarefas (tarefaString) {
+    let spanTarefa = document.createElement('span');
+    spanTarefa.innerHTML = tarefaString;
+    let myTask = document.querySelector('.my-tasks');
+    myTask.appendChild(spanTarefa);
+}
+tarefas('Estudar');
 
