@@ -1,13 +1,16 @@
+* {
+    box-sizing: border-box;
+}
 body {
-    font-size: larger;
+    font-size: x-large;
+    text-align: center;
     margin: 5%;
 }
 h1 {
-    font-size: 1.5em;
-
+    font-size: 1.7em;
 }
 h2 {
-
+    font-size: 1.5em;
 }
 
 img {
@@ -17,6 +20,21 @@ img {
 figure {
     margin: 0;
     margin-top: 20px;
+}
+@media (min-width: 600px) {
+
+    body {
+        background-color: aliceblue;
+        font-size: large;
+        margin: 2% 9%;
+    }
+    figure {
+        float: left;
+        border: 1px solid black;
+        margin: 2%;
+        width: 45%;
+    }
+   
 }
 
 /* 
