@@ -110,10 +110,15 @@
       #content img {
           max-width: 90%;
       }
+      #navigation ul {
+        width: 100%;
+      }
       #navigation ul li {
+        width: 100%;
         display: flex;
       }
       #navigation li a {
+        width: 100%;
         border-right: none;
       }
             
