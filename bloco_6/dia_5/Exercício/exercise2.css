@@ -1,0 +1,94 @@
+/* 
+1 - Utilizando a abordagem mobile first e media queries , crie três versões de layout diferentes para essa página .
+ Cada layout deve corresponder a um tamanho diferente de página (pequeno, médio e grande) . 
+ Faça pelo menos um commit para cada layout ;
+2 - Para fazer isso de forma adequada, você deve prestar atenção no conteúdo da página 
+e pensar em como mostrá-lo em cada um dos tamanhos de tela:
+
+    Onde a lista de capítulos deve estar posicionada?
+    Como a história deve ser mostrada?
+    Como o cabeçalho deve ser posicionado?
+    O que fazer com as informações do autor em cada tamanho de tela?
+
+3 - Talvez você precise alterar o HTML um pouco, adicionando elementos para facilitar a estilização,
+ ou talvez mudando um bloco de lugar dentro da página. 
+ */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    background-color: honeydew;
+    display: flex;
+    font-size: larger;
+    margin: 5%;
+}
+
+
+header {
+    background-color: gray;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0px 3%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+header p {
+    width: 100%;
+    font-size: 1.2em;
+}
+header ul{
+    display: flex;
+    padding: 0px 5px;
+    justify-content: space-around;
+}
+
+header ul li {
+    display: flex;
+} 
+
+nav, ul {
+    list-style: none;
+}
+
+.aside-one {
+    margin-top: 150px;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+      background-color: lavender;
+    }
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    header p {
+        width: auto;
+        font-size: 1.3em;
+    }
+    header ul li {
+        padding-left: 7%;
+    }
+    .aside-one {
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    body {
+      background-color: rgb(250, 233, 230);
+    }
+    header ul li {
+        padding: 0 15px;
+    }
+}
