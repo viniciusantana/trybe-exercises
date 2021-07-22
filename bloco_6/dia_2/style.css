@@ -1,0 +1,15 @@
+header, form{
+  background-color: aliceblue;
+  border:  1px solid gray;
+  border-radius: 3px;
+  width: 80%;
+  padding: 50px;
+  margin: 40px auto;
+}
+
+.line-content {
+    margin: 20px;
+}
+/* .line-content input[type="text"] {
+    border-radius: 50%;
+} */

@@ -21,7 +21,7 @@ figure {
     margin: 0;
     margin-top: 20px;
 }
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
     body {
         background-color: aliceblue;
         font-size: large;
@@ -46,6 +46,44 @@ figure {
         float: left;
         margin: 5%;
         width: 40%;
+    }   
+} */
+
+@media (min-width: 600px) {
+    body {
+        background-color: aliceblue;
+        font-size: large;
+        margin: 2% 9%;
+    }
+    figure {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 2%;
+        width: 45%;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    body {
+        background-color: rgb(212, 212, 212);
+        font-size: medium;
+        margin: 20px 20%;
+        max-width: 1000px;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main p {
+        width: 100%;
+    }
+    figure {
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        width: 32%;
     }   
 }
 
