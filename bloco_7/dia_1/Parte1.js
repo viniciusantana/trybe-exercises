@@ -8,5 +8,10 @@ const scope = (escopo) => {
       console.log(elseScope);
     }
   }
+  scope(true)
+ 
+/* 
+  const scope = (escopo) => `escopo === true`? `Não devo ser utilizada fora do meu escopo (if)` : `"Não devo ser utilizada fora meu escopo (else)`
 
-  scope(true);
+  console.log(scope(true)) */
+  
