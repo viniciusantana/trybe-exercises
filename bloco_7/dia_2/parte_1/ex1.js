@@ -36,6 +36,7 @@ const order = {
 
 const customerInfo = (order) => {
     // Adicione abaixo as informações necessárias.
+    console.log(`Olá ${order.order.delivery.deliveryPerson}, entrega para: ${order.name}, Telefone: ${order.phoneNumber}, R. ${order.address.street}, Nº: ${order.address.number}, AP: ${order.address.apartment}`);
 
 }
 
@@ -43,10 +44,14 @@ customerInfo(order);
 
 const orderModifier = (order) => {
     // Adicione abaixo as informações necessárias.
+    order.name = 'Luiz Silva'
+    console.log(`Olá ${order.name}, o total do seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ 50,00."`)
+
 
 }
 
 orderModifier(order);
+console.log(Object.keys(order.order));
 
 /* 
 Agora você vai fazer alguns exercícios de fixação.
