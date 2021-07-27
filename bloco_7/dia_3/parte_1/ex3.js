@@ -24,3 +24,10 @@
 
     assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4]);
     assert.notDeepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4]);
+    assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);
+
+    let arrayz = [5, 6, 7, 8];
+    myRemoveWithoutCopy(arrayz, 7);
+    assert.deepStrictEqual(arrayz, [5, 6, 8]);
+
+
