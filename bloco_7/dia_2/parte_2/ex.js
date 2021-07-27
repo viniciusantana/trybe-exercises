@@ -38,6 +38,8 @@ const objectLength = (objectC) => console.log(Object.keys(objectC).length);
 objectLength(lesson2);
 
 //4.Crie uma função para listar os valores de um objeto.Essa função deve receber um objeto como parâmetro.
+const valueList = (objectD) => console.table(Object.values(objectD));
+valueList(lesson1)
 
 /* 5.Crie um objeto de nome allLessons, que deve agrupar todas as aulas através do Object.assign. 
 Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1, lesson2 e lesson3.
