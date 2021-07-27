@@ -2,6 +2,12 @@
 
 const assert = require('assert');
 // escreva a função findTheNeedle aqui
+const findTheNeedle = (arrayOfWords, word) => {
+    for(let index = 0; index < arrayOfWords.length; index += 1) {
+        if(arrayOfWords[index] === word) return index;
+    }
+    return -1;
+}
 
 let words = ['house', 'train', 'slide', 'needle', 'book'];
 let expected = 3;
