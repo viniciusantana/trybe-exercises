@@ -34,3 +34,7 @@ assert.strictEqual(myFizzBuzz(5), 'buzz');
 // D:
 assert.strictEqual(myFizzBuzz(7), 7);
 
+// E:
+assert.strictEqual(myFizzBuzz('8'), false);
+
+
