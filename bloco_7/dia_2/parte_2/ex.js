@@ -29,7 +29,8 @@ const addKeyValue = (objectA, key, value) => {
 addKeyValue(lesson2, 'turno', 'manhã');
 console.table(lesson2);
 //2.Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
-
+const keyList = (objectB) => {console.table(Object.keys(objectB));}
+keyList(lesson3);
 //3.Crie uma função para mostrar o tamanho de um objeto.
 
 //4.Crie uma função para listar os valores de um objeto.Essa função deve receber um objeto como parâmetro.
