@@ -12,12 +12,13 @@ caso não esteja, altere o código para que ele passe nos testes. */
 const assert = require('assert');
 
 const greetPeople = (people) => {
+    const output = [];
     let greeting = 'Hello ';
 
     for (const person in people) {
-        greeting += people[person];
+        output.push(greeting + people[person]);
     }
-    return greeting;
+    return output;
 };
 
 const parameter = ['Irina', 'Ashleigh', 'Elsa'];
