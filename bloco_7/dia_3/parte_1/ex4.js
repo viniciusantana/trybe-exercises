@@ -1,5 +1,8 @@
 /* 
-    4.A função myFizzBuzz(num) recebe um número num e retorna "fizzbuzz" se o número for divisível por 3 e 5 , retorna "fizz" se for divisível apenas por 3 , retorna "buzz" se divisível apenas por 5 , retorna o próprio número caso não seja divisível por 3 ou 5 e retorna false caso num não seja um número
+    4.A função myFizzBuzz(num) recebe um número num e retorna "fizzbuzz" se o número for divisível por 3 e 5 ,
+     retorna "fizz" se for divisível apenas por 3 , retorna "buzz" se divisível apenas por 5 ,
+     retorna o próprio número caso não seja divisível por 3 ou 5 e retorna false caso num não seja um número
+
     A-Faça uma chamada com um número divisível por 3 e 5 e verifique se o retorno é o esperado
     B-Faça uma chamada com um número divisível por 3 e verifique se o retorno é o esperado
     C-Faça uma chamada com um número divisível por 5 e verifique se o retorno é o esperado
@@ -18,3 +21,5 @@ function myFizzBuzz(num) {
 }
 
 // implemente seus testes aqui
+
+assert.strictEqual(myFizzBuzz(15), 'fizzbuzz');
