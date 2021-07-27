@@ -2,11 +2,12 @@
 escreva testes para verificar se a mesma está retornando como se vê na variável result e,
 caso não esteja, altere o código para que ele passe nos testes. 
  */
-
+const assert = require('assert');
 
 const removeVowels = (word) => {
     const characters = word.split('');
     const results = [];
+    let counter = 1;
   
     for (let index = 0; index < characters.length; index += 1) {
       if (
@@ -16,14 +17,16 @@ const removeVowels = (word) => {
         characters[index] === 'e' ||
         characters[index] === 'u'
       ) {
+          results.push(`${counter}`);
+          counter += 1;
+    } else {
         results.push(characters[index]);
-      } else {
-        results.push('_');
       }
     }
-    return results;
+    return results.join('');
   };
   
   
   const parameter = 'Dayane';
   const result = 'D1y2n3';
+  assert.strictEqual(removeVowels(parameter), result);
