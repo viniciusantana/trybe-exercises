@@ -51,7 +51,13 @@ customerInfo(order);
 const orderModifier = (order) => {
     // Adicione abaixo as informações necessárias.
     order.name = 'Luiz Silva'
-    console.log(`Olá ${order.name}, o total do seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ 50,00."`)
+    order.payment = 50
+    const consumer = order.name;
+    const pizza = Object.keys(order.order.pizza);
+    const drink = order.order.drinks.coke.type;
+    payment = order.payment;
+
+    console.log(`Olá ${consumer}, o total do seu pedido de ${pizza[0]}, ${pizza[1]} e ${drink} é R$${payment},00"`)
 
 
 }
