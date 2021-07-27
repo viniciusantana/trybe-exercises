@@ -30,3 +30,7 @@ assert.strictEqual(myFizzBuzz(9), 'fizz');
 
 // C:
 assert.strictEqual(myFizzBuzz(5), 'buzz');
+
+// D:
+assert.strictEqual(myFizzBuzz(7), 7);
+
