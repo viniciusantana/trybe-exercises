@@ -90,12 +90,16 @@ releaseYear: 1954,
 },
 ];
 
-/* 4 - Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
+/* 4 - Crie um array ordenado pelos livros com 
+mais de 60 anos de publicação e ordene-o pelo livro mais velho.
 
 Dica: use as funções filter e sort
  */
 function oldBooksOrdered() {
 // escreva seu código aqui
+ return books.filter((value) => (
+   value.releaseYear < 1961
+ )).sort((a,b) =>(a.releaseYear - b.releaseYear));
 }
 
 assert.deepStrictEqual(oldBooksOrdered(), expectedResult);
