@@ -75,8 +75,19 @@ function authorWith3DotsOnName() {
 // escreva seu código aqui
   return books.filter((value)=> (
     value.author.name.match(/[A-Z][.]/g)? value.author.name.match(/[A-Z][.]/g).length === 3 : false
-  )).map((value2) => (
-    value2.name
-  ))[0];
+  ))[0].name;
 }
+
 assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
+
+/*
+const expectedResult = 'O Senhor dos Anéis';
+
+function authorWith3DotsOnName() {
+  return books.find((book) => (
+    book.author.name.split(' ').filter((word) => word.endsWith('.')).length === 3
+  )).name;
+}
+
+assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
+*/
