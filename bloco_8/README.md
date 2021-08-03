@@ -37,9 +37,9 @@
 
 ### [HOFs Arrays]
 - Os arrays possuem várias funções que facilitam sua criação e manipulação, além de deixar seu código muito mais legível e conciso.
-- `Array.forEach` => itera sobre todos os elementos de um array;
-- `Array.find` => encontrar o primeiro elemento de um array que satisfaça a uma condição;
-- `Array.some` e `Array.every` => testar os elementos de um array satisfazem a uma condição;
+- `Array.forEach` => itera sobre todos os elementos de um array;(não retorna nada)
+- `Array.find` => encontrar o primeiro elemento de um array que satisfaça a uma condição; (retorna o elemento)
+- `Array.some` e `Array.every` => testar os elementos de um array satisfazem a uma condição;(retorna true/false)
 - `Array.sort` => ordena arrays de acordo com algum critério.
 
 
