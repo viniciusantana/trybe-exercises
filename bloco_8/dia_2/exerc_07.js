@@ -74,7 +74,7 @@ const expectedResult = false;
 function authorUnique() {
   // escreva seu código aqui
   return !books.some((atual) => (books.some((value2) => {
-    if (atual.id !== value2.id) {
+    if (atual !== value2) {
       return (atual.author.birthYear === value2.author.birthYear);
     }
     return false;
