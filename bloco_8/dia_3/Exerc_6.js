@@ -75,6 +75,11 @@ const expectedResult = [
 
 function oldBooks() {
   // escreva seu código aqui
+  return books.filter((value) => (
+    value.releaseYear < 1961
+  )).map((value2)=> (
+    value2.name
+  ));
 }
 
 assert.deepStrictEqual(oldBooks(), expectedResult);
