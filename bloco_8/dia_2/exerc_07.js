@@ -73,10 +73,7 @@ const expectedResult = false;
 
 function authorUnique() {
   // escreva seu código aqui
-  return !books.some((atual) => (books.some((value2) => {
-    return (atual !== value2)?(atual.author.birthYear === value2.author.birthYear):false;
-  }))
-  );
+  return !books.some((atual) => (books.some((value2) => (atual !== value2)?(atual.author.birthYear === value2.author.birthYear):false)));
 }
 
 assert.strictEqual(authorUnique(), expectedResult);
