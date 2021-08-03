@@ -37,10 +37,12 @@
 
 ### [HOFs Arrays]
 - Os arrays possuem várias funções que facilitam sua criação e manipulação, além de deixar seu código muito mais legível e conciso.
-- `Array.forEach` => itera sobre todos os elementos de um array;(não retorna nada)
+- `Array.forEach` => itera sobre todos os elementos de um array;(não retorna nada por padrão)
 - `Array.find` => encontrar o primeiro elemento de um array que satisfaça a uma condição; (retorna o elemento)
 - `Array.some` e `Array.every` => testar os elementos de um array satisfazem a uma condição;(retorna true/false)
 - `Array.sort` => ordena arrays de acordo com algum critério.
+- `Array.filter` =>  retorna um array com todos os elementos que satisfaçam à condição verificada pela função.
+- `Array.map` => aplica sobre os elementos de um array uma função e retorna um array novo, sem modificar o original;
 
 
 ### [Array.forEach] 
@@ -148,6 +150,7 @@ https://dorianneto.com.br/boas-praticas/torne-se-um-ninja-das-funcoes-com-early-
 
 ### [ARRAY.FILTER]
 - Cria um novo array com todos elemetos que passaram no teste implementado na função fornecida.
+- Retorna um array com todos os elementos que satisfaçam à condição verificada pela função, se não, retorna vazio.
 - a função(callback) deve retornar true(para manter o elemento) ou false(para tirar o elemento).
 - A Callback recebe como parâmetro (valor atual, indice(opcional), array(opcional)).
 ```
