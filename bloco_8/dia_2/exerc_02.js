@@ -74,6 +74,12 @@ Dica: use a função forEach .
 function smallerName() {
     let nameBook;
     // escreva aqui o seu código
+    nameBook = books[0].name
+    books.forEach((value) => {
+        if(value.name.length < nameBook.length) {
+            nameBook = value.name
+        }
+    })
   
     // Variável nameBook que receberá o valor do menor nome;
     return nameBook;
@@ -81,4 +87,3 @@ function smallerName() {
   
   assert.strictEqual(smallerName(), 'Duna');
 
-  
