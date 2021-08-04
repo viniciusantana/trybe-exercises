@@ -17,16 +17,15 @@
 ### [Callback function]**
 - Função que é passada por parâmetro e executada em algum momento.
 - Quem passa a função por parâmetro não tem controle de quando ela será executada.
-- A função pode demorar 1 milissegundo ou 1 minuto para ser executada. 
+- A callback pode demorar 1 milissegundo, 1 minuto ou mais para ser executada.(aula) 
 - https://developer.mozilla.org/pt-BR/docs/Glossary/Callback_function
 
-### [Aula]
+### [Aula / dicas]
 - Função é um tipo de dado como qualquer outro.
 - Função .call() => `functionA(x) === functionA.call(x)`
 - `.call` é um [syntactic sugar] pesquisar.
-
-### [OUTROS / DICAS]
 - Método de arrays - Anderson leite t14b - https://www.treinaweb.com.br/blog/javascript-metodos-de-arrays-que-voce-precisa-conhecer
+
 
 # DIA 2
 
@@ -247,7 +246,7 @@ console.log(numbers); // [ 1, 2, 3 ]
 ### [OBJECT DESTRUCTURING]
 - `{ propriedade } = objeto` propriedade = value
 - `{ propriedade:nomeVariável } = objeto` nomeVariável = value
-https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+- https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 
 ### [ARRAY DESTRUCTURING]
 ```
@@ -297,3 +296,15 @@ const newUser = (id, name, email) => {
 ```
 
 ### [DEFAULT PARAMETERS]
+- o default será utilizado caso nenhum argumento seja fornecido a função.
+- https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Default_parameters
+- Sintaxe:
+```
+function [nome](param1= valorPredefinido1, ..., paramN = valorPredefinidoN ) {
+   instruções
+}
+```
+### [AULA]
+- (Início) - Default parameters.
+- (00:06:50) - Obj. property shorthands.
+- (00:13:40) - Spread
