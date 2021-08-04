@@ -269,8 +269,31 @@ const person = {
 };
 const { nationality = 'Brazilian' } = person;
 console.log(nationality); // Brazilian
-````
+```
 
 ### [OBJECT PROPERTY SHORTHAND]
+ - Novo em JavaScript com ES6 / ES2015, se você quiser definir um objeto cujas chaves tenham o mesmo nome que as variáveis passadas como propriedades, você pode usar a abreviação e simplesmente passar o nome da chave. 
+ - https://alligator.io/js/object-property-shorthand-es6/
+
+- Exemplo com Shorthand::
+```
+const newUser = (id, name, email) => {
+  return {
+    id,
+    name,
+    email,
+  };
+};
+```
+- Exemplo sem Shorthand:
+```
+const newUser = (id, name, email) => {
+  return {
+    id: id,
+    name: name,
+    email: email,
+  };
+};
+```
 
 ### [DEFAULT PARAMETERS]
