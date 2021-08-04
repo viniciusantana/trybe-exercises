@@ -22,7 +22,7 @@
 
 ### [Aula+]
 - Função é um tipo de dado como qualquer outro.
-- Função .call() chama a função `function(x) === function.call(x)`
+- Função .call() => `functionA(x) === functionA.call(x)`
 - `.call` é um [syntactic sugar] pesquisar.
 
 # DIA 2
@@ -37,16 +37,17 @@
 
 ### [HOFs Arrays]
 - Os arrays possuem várias funções que facilitam sua criação e manipulação, além de deixar seu código muito mais legível e conciso.
-- `Array.forEach` => itera sobre todos os elementos de um array;(não retorna nada por padrão)
-- `Array.find` => encontrar o primeiro elemento de um array que satisfaça a uma condição; (retorna o elemento)
-- `Array.some` e `Array.every` => testar os elementos de um array satisfazem a uma condição;(retorna true/false)
-- `Array.sort` => ordena arrays de acordo com algum critério.
-- `Array.filter` =>  retorna um array com todos os elementos que satisfaçam à condição verificada pela função.
-- `Array.map` => aplica sobre os elementos de um array uma função e retorna um array novo, sem modificar o original;
+- `Array.forEach` => Itera sobre todos os elementos de um array;(não retorna nada por padrão)
+- `Array.find` => Encontra o primeiro elemento de um array que satisfaça a uma condição; (e retorna o elemento)
+- `Array.some` e `Array.every` => Testa os elementos de um array que satisfazem a uma condição;(retorna true/false)
+- `Array.sort` => Ordena arrays de acordo com algum critério. (altera o array original)
+- `Array.filter` =>  Retorna(cria) um array com todos os elementos que satisfaçam à condição verificada pela função.
+- `Array.map` => Aplica sobre os elementos de um array uma função e retorna um array novo, sem modificar o original;
+- `Array.reduce` => Executa a função Callback para cada elemento do array, resultando em um único valor de retorno da função reduce.
 
 
 ### [Array.forEach] 
-- Para cada-faça
+- Para cada(elemento)-faça
 - itera sobre todos os elementos de um array.
 - percorre o array e executa a função passada para cada um dos seus valores.
 - O forEach não retorna nenhum valor 
@@ -67,7 +68,7 @@ ELEMENTO: B POSIÇÃO: 1 LISTA: [A, B, C, D]
 ELEMENTO: C POSIÇÃO: 2 LISTA: [A, B, C, D]
 ELEMENTO: D POSIÇÃO: 3 LISTA: [A, B, C, D]
 ```
-### [ARRAY.FIND] se-encontrar
+### [ARRAY.FIND] 
 - É utilizada para achar o primeiro elemento que satisfaça a condição passada.
 - a função(callback) que deverá ser passada precisa retornar true ou false.
 - A Callback function recebe como parâmetro (valor/element, indice(opcional), array(opcional)).
@@ -78,7 +79,7 @@ Array = [19, 21, 30, 3, 45, 22, 15];
 Array.find(((element) => element % 2 === 0) = 30
 ```
 
-### [ARRAY.SOME] -se-Algum
+### [ARRAY.SOME] 
 - Retorna 'true' se ao menos um elemento de um array satisfaz a uma condição. Caso contrário retorna 'false'.
 - Como funciona: A função some testa elemento por elemento do array e só para se for 'true'. caso ao final do array não encontre nenhum elemento retorna 'false'
 - Se parece com o operador lógico || (or).
@@ -188,9 +189,8 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects
     - Valor Atual (cur)
     - Index Atual (idx)
     - Array original (src)
-
+- (video) - https://www.youtube.com/watch?v=D_MExaVe95w
 - (vídeo) - https://www.youtube.com/watch?v=O_bSjsLga48
-
 - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 ```
 const array1 = [1, 2, 3, 4];
