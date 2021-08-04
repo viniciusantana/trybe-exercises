@@ -261,6 +261,15 @@ constb = valor2
 constC = value3 inverso 
 ```
 ### [DEFAULT DESTRUCTURING]
+```
+const person = {
+  name: 'João',
+  lastName: 'Jr',
+  age: 34,
+};
+const { nationality = 'Brazilian' } = person;
+console.log(nationality); // Brazilian
+````
 
 ### [OBJECT PROPERTY SHORTHAND]
 
