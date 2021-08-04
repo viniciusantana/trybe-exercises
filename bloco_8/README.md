@@ -1,4 +1,13 @@
 # BLOCO 8:
+## Sumário
+
+- [DIA 1](#dia-1)
+  - [First Class Functions](#first-class-functions)
+- [DIA 2](#dia-2)
+- [DIA 3](#dia-3)
+- [DIA 4](#dia-4)
+- [DIA 5](#dia-5)
+
 
 # DIA 1
 
