@@ -21,6 +21,15 @@ function studentAverage() {
   ));
 }
 
+//GABARITO:
+/* function studentAverage() {
+  const nameAndAverage = students.map((student, index) => ({
+    name: student,
+    average: (notes[index].reduce((acc, curr) => acc + curr, 0) / notes[index].length),
+  }));
+  return nameAndAverage;
+}
+ */
 const expected = [
   { name: 'Pedro Henrique', average: 7.8 },
   { name: 'Miguel', average: 9.2 },
