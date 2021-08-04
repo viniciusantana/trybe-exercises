@@ -178,7 +178,11 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects
 # DIA 4
 
 ### [ARRAY.REDUCE]
-- array.reduce(callback( acumulador, valorAtual, index atual, array org), valorInicial))
+- Reduz o array em um único valor.
+- Executa a função Callback para cada elemento do array, resultando em um único valor de retorno da função reduce.
+- O que é executado em Callback retorna na próxima interação no parâmetro acumulador.
+- `callback(acumulador, valorAtual)` acumulador e valorAtual são obrigatórios.
+- array.reduce(callback( acumulador, valorAtual, index atual, array org), valorInicial)
 - A função Callback recebe 4 parâmetros:
     - Acumulador (acc)
     - Valor Atual (cur)
@@ -194,4 +198,66 @@ const reducer = (accumulator, currentValue) => accumulator + currentValue;
 array1.reduce(reducer) // retorno: ( 1 + 2 + 3 + 4 ) = 10.
 array1.reduce(reducer, 5) // retorno: (5 + 1 + 2 + 3 + 4) = 15.
 ```
+### [AULA]
+- (9:00) Sintaxe
+- (13:53) req1 - Exemplo detalhado e com debug 
+- (39:50) req1 - segundo parâmetro do reduce (valor inicial)
+- Ao declarar o valor inicial na função reduce:
+  - O acumulador inicia com o valor inicial (acumulador = valorInicial)
+  - o valor atual inicia na posição [0] do array (valorAtual = Array[0]).
+- Não declarar o valor inicial na função reduce:
+  - O `acumulador` inicia com o primeiro valor do array `(acumulador = Array[0])`
+  - O `valor atual` inicia na posição [1] do array `(valorAtual = Array[1])`.
+- (50:00) req2 - Encontre o maior valor no array de numbers
+- (1:04:10) req3 - Criar um objeto de array com as seguintes informações. (find + reduce)
 
+
+
+# DIA 5
+
+### [SPREAD OPERATOR] [...]
+- rep: o operador spread é um recurso do ES6 que nos permite espalhar os valores de um objeto iterável, como um array, em um novo objeto.
+- Incluído no ES6
+- Espalha valores de arrays e objetos.
+- Ajuda a promover imutabilidade no código
+- pode ser utilizado para combinar objetos e arrays
+- Pode ser utilizado para copiar valores de objetos iteráveis
+- Pode ser utilizado em funções que recebem múltiplos argumentos
+- `['string',...array, ...array2]`
+- `{...objeto1, ...objeto2, key:value}`
+- `Function x (...array) => a + b` -> array = [a, b]
+
+```
+const numbers = [1, 2, 3];
+
+const newArray = [...numbers, 4, 5, 6];
+console.log(newArray); // [ 1, 2, 3, 4, 5, 6 ]
+console.log(numbers); // [ 1, 2, 3 ]
+```
+
+### [PARÂMETRO REST]
+- O parâmetro rest é uma feature do ES6
+- Permite criar funções com um número variável de argumentos
+- Cria funções mais flexíveis
+-  `Function x (...rest)`
+
+### [OBJECT DESTRUCTURING]
+- `{ propriedade } = objeto` propriedade = value
+- `{ propriedade:nomeVariável } = objeto` nomeVariável = value
+
+### [ARRAY DESTRUCTURING]
+```
+const ARRAY = ['value1', 'valor2', '3eulav'];
+const [constA, constB, constC] = ARRAY;
+--------
+Saída:
+--------
+constA = value1
+constb = valor2
+constC = value3 inverso 
+```
+### [DEFAULT DESTRUCTURING]
+
+### [OBJECT PROPERTY SHORTHAND]
+
+### [DEFAULT PARAMETERS]
