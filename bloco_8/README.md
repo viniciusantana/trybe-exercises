@@ -20,10 +20,13 @@
 - A função pode demorar 1 milissegundo ou 1 minuto para ser executada. 
 - https://developer.mozilla.org/pt-BR/docs/Glossary/Callback_function
 
-### [Aula+]
+### [Aula]
 - Função é um tipo de dado como qualquer outro.
 - Função .call() => `functionA(x) === functionA.call(x)`
 - `.call` é um [syntactic sugar] pesquisar.
+
+### [OUTROS / DICAS]
+- Método de arrays - Anderson leite t14b - https://www.treinaweb.com.br/blog/javascript-metodos-de-arrays-que-voce-precisa-conhecer
 
 # DIA 2
 
@@ -225,7 +228,7 @@ array1.reduce(reducer, 5) // retorno: (5 + 1 + 2 + 3 + 4) = 15.
 - Pode ser utilizado em funções que recebem múltiplos argumentos
 - `['string',...array, ...array2]`
 - `{...objeto1, ...objeto2, key:value}`
-- `Function x (...array) => a + b` -> array = [a, b]
+- `Function x (...array) => a + b`
 
 ```
 const numbers = [1, 2, 3];
@@ -244,6 +247,7 @@ console.log(numbers); // [ 1, 2, 3 ]
 ### [OBJECT DESTRUCTURING]
 - `{ propriedade } = objeto` propriedade = value
 - `{ propriedade:nomeVariável } = objeto` nomeVariável = value
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 
 ### [ARRAY DESTRUCTURING]
 ```
