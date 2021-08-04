@@ -3,10 +3,35 @@
 
 - [DIA 1](#dia-1)
   - [First Class Functions](#first-class-functions)
+  - [HOF](#hof)
+  - [Callback function](#callback-function)
+  - [Aula](#aula1)
 - [DIA 2](#dia-2)
+  - [Softskills](#softskills)
+  - [HOF/Arrays](#hofs-arrays)
+  - [Array.forEach](#hofs-arrays)
+  - [ARRAY.FIND] 
+  - [ARRAY.SOME] 
+  - [ARRAY.EVERY]
+  - [ARRAY.SORT]
+  - [AULA] 
 - [DIA 3](#dia-3)
+  - Financeiro trybe
+  - ARRAY.FILTER
+  - ARRAY.MAP
+  - AULA
 - [DIA 4](#dia-4)
+  - ARRAY.REDUCE
+  - AULA
 - [DIA 5](#dia-5)
+  - SPREAD OPERATOR
+  - PARÂMETRO REST
+  - OBJECT DESTRUCTURING
+  - ARRAY DESTRUCTURING
+  - DEFAULT DESTRUCTURING
+  - OBJECT PROPERTY SHORTHAND
+  - DEFAULT PARAMETERS
+  - AULA
 
 
 # DIA 1
@@ -29,7 +54,7 @@
 - A callback pode demorar 1 milissegundo, 1 minuto ou mais para ser executada.(aula) 
 - https://developer.mozilla.org/pt-BR/docs/Glossary/Callback_function
 
-### [Aula / dicas]
+### [Aula1]
 - Função é um tipo de dado como qualquer outro.
 - Função .call() => `functionA(x) === functionA.call(x)`
 - `.call` é um [syntactic sugar] pesquisar.
@@ -137,7 +162,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects
 [40, 100, 1, 5, 25, 10].sort((a, b) => b - a) = [ 100, 40, 25, 10, 5, 1 ]
 ```
 
-### [AULA]
+### [AULA-2]
 - 14:51 - A ordem dos parâmetros faz diferença e tem que ser respeitada, podendo ser declarada sem ser usada.
 - 15:50 - Caso for declarar um parâmetro que não vai ser usado, pode ser declarado como _ (underline) para o lint não reclamar [não testado/Hugo].
 - 19:30 - Como a função forEach funciona por dentro?
