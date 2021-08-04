@@ -62,32 +62,6 @@ const books = [
     releaseYear: 1928,
   },
 ];
+export { books };
 
 // Adicione o código do exercício aqui:
-
-const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
-
-// 2 - Crie uma string com os nomes de todas as pessoas autoras. 
-function reduceNames() {
-  // escreva seu código aqui
-  return books.reduce((acc, atual) => (
-    acc === atual.author.name? acc:`${acc}, ${atual.author.name}`
-  ), books[0].author.name) + '.';
-  
-}
-
-assert.strictEqual(reduceNames(), expectedResult);
-
-// GABARITO:
-
-/* 
-function reduceNames() {
-    const names = books.reduce((acc, book, index, array) => {
-      if (index === array.length - 1) return `${acc} ${book.author.name}.`;
-      return `${acc} ${book.author.name},`;
-    }, '');
-    return names.trim();
-  }
-  
-  assert.strictEqual(reduceNames(), expectedResult);
-   */
