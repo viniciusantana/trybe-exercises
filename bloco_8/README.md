@@ -72,13 +72,27 @@
   - Executa a função Callback para cada elemento do array, resultando em um único valor de retorno da função reduce.
 ---------
 - SPREAD OPERATOR
+  - Permite que um objeto iterável, como uma expressão de array ou uma string seja expandido.
+  - [Documentação](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 - PARÂMETRO REST
-- OBJECT DESTRUCTURING
-- ARRAY DESTRUCTURING
-- DEFAULT DESTRUCTURING
-- OBJECT PROPERTY SHORTHAND
+  -  function(a, b, ...theArgs) [Documentação](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+  - Permite representar um número indefinido de argumentos como um array
+- [DESTRUCTURING](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+- OBJECT DESTRUCTURING `const { chave } = objeto;`
+- ARRAY DESTRUCTURING `const [primeiraPosição, SegundaPosição] = array`
+- DEFAULT DESTRUCTURING  `const [primeiraPosição, SegundaPosição = valorPadrão] = array`
+- [OBJECT PROPERTY SHORTHAND](https://alligator.io/js/object-property-shorthand-es6/)
+```
+const newUser = (id, name, email) => {
+  return {
+    id,
+    name,
+    email,
+  };
+};
+newUser('a', 'b', 'c') === {id: a, name: 'b', email: 'c'}
+```
 - DEFAULT PARAMETERS
-- AULA
 
 
 # DIA 1
