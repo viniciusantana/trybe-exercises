@@ -1,0 +1,89 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    box-sizing:border-box;
+  }
+  
+  h2, h3 {
+    margin: 0 0 20px;
+  }
+  
+  p {
+    margin-bottom: 5px;
+  }
+  
+  header {
+    background-color: rgb(10, 126, 81);
+    color: white;
+  }
+  
+  h1{
+    padding: 10px 30px 0;
+  }
+  /*NAV*/
+  
+  nav {
+    background-color: cornflowerblue;
+    padding: 0 30px;
+  }
+  
+  nav ul {
+    padding: 5px 0;
+  }
+  
+  nav li {
+    margin-right: 40px;
+    list-style-type: none;
+    display: inline;
+  }
+  
+  nav li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  article{
+    max-width: 1200px;
+    margin: auto;
+    flex-grow: 1;
+    width: 66%;
+    display: inline-block;
+  }
+   
+  aside {
+    background-color: lightgrey;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  section{
+    padding: 15px;
+  }
+  footer{
+      display: block;
+      background-color: aquamarine;
+  }
+  
+  #contato, #sobre{
+    display: inline-block;
+    width: 40%;
+    margin-right: 10px;
+    padding: 15px;
+    background-color: azure;
+    text-align: center;
+  }
+  
+  .jobs {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  /*
+  Css Retirado e adaptado de
+  https://github.com/tryber/sd-014-b-live-lectures/compare/lecture/3.4
+
+  */
