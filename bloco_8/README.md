@@ -33,6 +33,53 @@
   - DEFAULT PARAMETERS
   - AULA
 
+## Resumo
+
+- [First Class Functions]
+- [HOF] 
+  -É uma função que recebe(ou retorna) outra como parâmetro
+- [Callback function] 
+  - (Função dentro de uma função)
+  - Função que é passada como parâmetro de outra função.
+- [Array.forEach]
+  - Itera sobre todos os elementos de um array;
+  - Retorna: Não retorna nada por padrão
+- [ARRAY.FIND]
+  - Encontra o primeiro elemento de um array que satisfaça a uma condição
+  - callback: retorna true/false
+  - Retorna: primeiro elemento (com callback = true)
+- [ARRAY.SOME] 
+  - Retorna 'true' se ao menos um elemento de um array satisfaça a uma condição.
+  - Callback: retorna true/false
+  - Retorna: true/false
+- [ARRAY.EVERY]
+  - Retorna 'true' se todos os elementos de um array satisfazem a uma condição
+  - callback: retorna true/false
+  - Retorna: true/false
+- [ARRAY.SORT]
+  - Ordena arrays de acordo com algum critério. (altera o array original)
+  - Ordenar números em ordem crescente: ARRAY.sort((a, b) => a - b);
+  - Ordenar números em ordem decrescente: ARRAY.sort((a, b) => b - a);
+- [ARRAY.FILTER]
+  - Retorna um novo array com todos os elementos que satisfaçam à condição verificada pela função.
+  - callback: retorna true/false
+  - Retorna o elemento
+- [ARRAY.MAP]
+  - Aplica sobre os elementos de um array uma função e retorna um array novo, sem modificar o original;
+  - callback: retorna um elemento modificado. se não retorna undefined
+  - Retorna os valores retornados pelo Callback
+- [ARRAY.REDUCE]
+  - Executa a função Callback para cada elemento do array, resultando em um único valor de retorno da função reduce.
+---------
+- SPREAD OPERATOR
+- PARÂMETRO REST
+- OBJECT DESTRUCTURING
+- ARRAY DESTRUCTURING
+- DEFAULT DESTRUCTURING
+- OBJECT PROPERTY SHORTHAND
+- DEFAULT PARAMETERS
+- AULA
+
 
 # DIA 1
 
