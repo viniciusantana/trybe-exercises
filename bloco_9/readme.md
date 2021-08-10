@@ -30,11 +30,11 @@
 - A função fetch() é uma função assíncrona baseada em uma promise e é utilizada para fazer chamadas às URLs das APIs
 - fetch() recebe como parametro URL da API e um Objeto com as informações sobre a requisição.
 - A função fetch() ainda pode ser chamada recebendo apenas a URL do serviço da API
-
+``` 
 fetch(URL) // PROMISE
     .then((resposta) => (resposta.json())) // Todos os dados da requisição
     .then((dados) => {console.log(dados.chave)}) // Dados em Json/objeto(chave: valor)
-
+```
 
 [API]
 - [O que são APIs/MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)
