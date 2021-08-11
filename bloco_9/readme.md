@@ -46,11 +46,12 @@ fetch(URL) // PROMISE
 - Extensão para chrome JSON viewer. Firefox não precisa.
 
 [??????] 
-- [(Vídeo)Como usar o método map para inserir informações na tela](https://www.youtube.com/watch?v=oQimi85ey_4)
-- [(Vídeo)Uma forma moderna de fazer requisições HTTP escrevendo menos (fetch, promises)](https://www.youtube.com/watch?v=BCSPrwu5aTo)
 - [(Vídeo)JS Assíncrono: Entenda de vez Callbacks, Promises e Async/Await](https://www.youtube.com/watch?v=7Bs4-rqbCQc)
+- [(Vídeo)Uma forma moderna de fazer requisições HTTP escrevendo menos (fetch, promises)](https://www.youtube.com/watch?v=BCSPrwu5aTo)
 - [(Vídeo)Promises - Uma introdução prática e compreensiva](https://www.youtube.com/watch?v=wTGPhsGJ0sw)
+- [(Vídeo)Como usar o método map para inserir informações na tela](https://www.youtube.com/watch?v=oQimi85ey_4)
 - [Event Loop](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
+- [(Vídeo)Async/await: o que é e como funciona | JavaScript](https://www.youtube.com/watch?v=Zl_jF7umgcs)
 
 
 # DIA 2
@@ -104,19 +105,19 @@ npm i node-fetch
 - Async
     - Transforma qualquer função em uma promise.
     - Para usá-la, basta colocar o async antes da definição da função.
-    - Ao converter uma função em uma promise, o que é resolve vira return e o que é reject vira throw.
+    - ??Ao converter uma função em uma promise, o que é resolve vira return e o que é reject vira throw.
 - Await
     - O await só pode ser usado dentro de uma função com async
     - Faz com o que a função espere uma resposta para continuar sua execução.
 - Try{} catch(error){}.
-    -   Bloco try/catch serve para tratamento de exceções, tratamento de códigos que podem não ser totalmente atendidos e gerarem alguma exceção/erro.
+    - Bloco try/catch serve para tratamento de exceções, tratamento de códigos que podem não ser totalmente atendidos e gerarem alguma exceção/erro.
     - O try consegue recuperar erros que possam ocorrer no código fornecido em seu bloco.
     - O catch por sua vez faz o tratamento dos erros que aconteceram.
+    - [(stack)Para que servem os Blocos Try/Catch e quando devem ser utilizados?](https://pt.stackoverflow.com/questions/58536/para-que-servem-os-blocos-try-catch-e-quando-devem-ser-utilizados)
+    - [try…catch - Tratando erros no JavaScript](https://ricardo-reis.medium.com/try-catch-tratando-erros-no-javascript-91bcce0b93ae)
 
 
-
-
-### [P]
+### [P/R]
 - O que é um código que é executado de modo assíncrono? Qual é a diferença disso para um código que é executado de modo síncrono?
 
 - Quando você tem que enfileirar várias callbacks , que problema surge?
