@@ -1,5 +1,5 @@
 # Bloco 9
-# DIA 1
+# [DIA 1](https://github.com/tryber/sd-014-b-live-lectures/tree/lecture/9.1)
 ## [OPERAÇÕES ASSINCRONAS]
 - Operações Síncronas
     - Conjunto de operações que dependem do término da execução de operações anteriores para começar sua execução.
@@ -51,11 +51,10 @@ fetch(URL) // PROMISE
 - [(Vídeo)Promises - Uma introdução prática e compreensiva](https://www.youtube.com/watch?v=wTGPhsGJ0sw)
 - [(Vídeo)Como usar o método map para inserir informações na tela](https://www.youtube.com/watch?v=oQimi85ey_4)
 - [Event Loop](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
-- [(Vídeo)Async/await: o que é e como funciona | JavaScript](https://www.youtube.com/watch?v=Zl_jF7umgcs)
 - [(Vídeo)Aplicação com JavaScript puro: Como desenvolver uma pokedex ](https://www.youtube.com/watch?v=Uptu3NrBFBM)
 
 
-# DIA 2
+# [DIA 2](https://github.com/tryber/sd-014-b-live-lectures/tree/lecture/9.2)
 ## [APLICATION PROGRAMMING INTERFACE API]
 - Uma API permite que aplicações se comuniquem umas com as outras, servindo de "ponte" para elas.
 - APIs retornam dados em response(reposta) a um request do cliente.
@@ -105,6 +104,8 @@ fetch(URL) // PROMISE
 npm init -y
 npm i node-fetch
 ```
+- [(Vídeo 5min)Async/await: o que é e como funciona | JavaScript](https://www.youtube.com/watch?v=Zl_jF7umgcs)
+
 - Async
     - Transforma qualquer função em uma promise.
     - Para usá-la, basta colocar o async antes da definição da função.
