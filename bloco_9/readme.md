@@ -8,21 +8,19 @@
 - Operações Assíncronas
     - Em uma requisição assíncrona, não existe sincronismo entre as requisições, sendo assim, podemos enviar diversas requisições em paralelo, onde cada resposta retorna quando estiver pronta.
     - São operações que não travam o fluxo de execução, podendo ser executadas em paralelo.
-    - [(Vídeo) O que é código assíncrono?](https://www.youtube.com/watch?v=tVYTqsqZHZY)
+    - [(Vídeo 4min) O que é código assíncrono?](https://www.youtube.com/watch?v=tVYTqsqZHZY)
     - [Artigo](https://giuliana-bezerra.medium.com/operacoes-assincronas-javascript-promises-ae7553ad62b8)
     - [MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Asynchronous)
     - [Conceitos gerais de programação assíncrona](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Asynchronous/Concepts)
-- setTimeOut(função, tempo-em-milissegundos)
+- setTimeOut(`função`, `tempo-em-milissegundos`)
     - Função assíncrona
     - Executa um bloco de código uma vez depois de um determinado tempo
     - [Timeouts e intervalos/MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals)
 ## [CALLBACKS]
-- Uma função callback é uma função passada a outra função como argumento
+- Uma função callback é uma função passada a outra função como argumento.
+- Na programação assíncrona, callbacks são passadas como funções para serem executadas após um certo evento
 - [DOCUMENTAÇÃO](https://developer.mozilla.org/pt-BR/docs/Glossary/Callback_function)
 - [(ARTIGO)ENTENDENDO FUNÇÕES CALLBACK](https://medium.com/totvsdevelopers/entendendo-fun%C3%A7%C3%B5es-callback-em-javascript-7b500dc7fa22)
-## [ERROS EM OPERAÇÕES ASSINCRONAS]
-- 
-- 
 
 ## [FETCH API]
 [FETCH]
@@ -41,6 +39,8 @@ fetch(URL) // PROMISE
 - [O que são APIs/MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)
 - API é uma forma de trafegar dados entre aplicações  
 - API é uma interface que está entre duas aplicações, possibilitando a comunicação entre elas através de requisições.
+
+[AULA/EXTRA]
 - https://github.com/public-apis/public-apis
 - pokeapi.co
 - Extensão para chrome JSON viewer. Firefox não precisa.
@@ -52,14 +52,15 @@ fetch(URL) // PROMISE
 - [(Vídeo)Como usar o método map para inserir informações na tela](https://www.youtube.com/watch?v=oQimi85ey_4)
 - [Event Loop](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
 - [(Vídeo)Async/await: o que é e como funciona | JavaScript](https://www.youtube.com/watch?v=Zl_jF7umgcs)
+- [(Vídeo)Aplicação com JavaScript puro: Como desenvolver uma pokedex ](https://www.youtube.com/watch?v=Uptu3NrBFBM)
 
 
 # DIA 2
 ## [APLICATION PROGRAMMING INTERFACE API]
-- Uma API permite que aplicações se comuniquem umas com as outras, servindo de "ponte" para elas
-- APIs retornam dados em response a um request do cliente
+- Uma API permite que aplicações se comuniquem umas com as outras, servindo de "ponte" para elas.
+- APIs retornam dados em response(reposta) a um request do cliente.
 - Toda API é um back-end, mas nem todo back-end é uma API.
-- Geralmente, retornam dados no formato JSON . 
+- Geralmente retornam dados no formato JSON . 
 - JSON significa J ava S cript O bject N otation e é basicamente uma forma de representarmos dados como objetos
 ## [RELEMBRANDO O FLUXO ASSÍNCRONO]
 - Quando o javascript lê uma função assíncrona, ela é enviada para uma área especial, e a fila síncrona continua correndo.
@@ -67,6 +68,8 @@ fetch(URL) // PROMISE
 - A área especial das assíncronas não é muito ordenada (a primeira que entra não é, necessariamente, a primeira que sair)
 - [Requisições sincronas e assíncronas](http://www.diogomatheus.com.br/blog/php/requisicoes-sincronas-e-assincronas/)
 ## [PROMISES]
+- [Usando promises/mdn](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Using_promises)
+- [Promise.all](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
 - É uma estrutura que representa uma eventual falha ou sucesso de uma chamada assíncrona.
 - A promise é do tipo Objeto.
 - As Promises têm  funções extras que facilitam o controle do fluxo assíncrono.
@@ -113,6 +116,7 @@ npm i node-fetch
     - Bloco try/catch serve para tratamento de exceções, tratamento de códigos que podem não ser totalmente atendidos e gerarem alguma exceção/erro.
     - O try consegue recuperar erros que possam ocorrer no código fornecido em seu bloco.
     - O catch por sua vez faz o tratamento dos erros que aconteceram.
+    - [MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/try...catch)
     - [(stack)Para que servem os Blocos Try/Catch e quando devem ser utilizados?](https://pt.stackoverflow.com/questions/58536/para-que-servem-os-blocos-try-catch-e-quando-devem-ser-utilizados)
     - [try…catch - Tratando erros no JavaScript](https://ricardo-reis.medium.com/try-catch-tratando-erros-no-javascript-91bcce0b93ae)
 
