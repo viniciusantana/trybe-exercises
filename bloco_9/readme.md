@@ -1,4 +1,5 @@
 # Bloco 9
+![img](https://i.imgur.com/R36tQO0.png)
 # [DIA 1](https://github.com/tryber/sd-014-b-live-lectures/tree/lecture/9.1)
 ## [OPERAÇÕES ASSINCRONAS]
 - Operações Síncronas
@@ -52,6 +53,7 @@ fetch(URL) // PROMISE
 - [(Vídeo)Como usar o método map para inserir informações na tela](https://www.youtube.com/watch?v=oQimi85ey_4)
 - [Event Loop](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
 - [(Vídeo)Aplicação com JavaScript puro: Como desenvolver uma pokedex ](https://www.youtube.com/watch?v=Uptu3NrBFBM)
+- [(Vídeo)Como JavaScript FUNCIONA? (recomendapo por RIBA JR)](https://www.youtube.com/watch?v=gb7FDfvHlGg)
 
 
 # [DIA 2](https://github.com/tryber/sd-014-b-live-lectures/tree/lecture/9.2)
