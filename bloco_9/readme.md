@@ -66,9 +66,10 @@ fetch(URL) // PROMISE
 - A área especial das assíncronas não é muito ordenada (a primeira que entra não é, necessariamente, a primeira que sair)
 - [Requisições sincronas e assíncronas](http://www.diogomatheus.com.br/blog/php/requisicoes-sincronas-e-assincronas/)
 ## [PROMISES]
-- São assíncronas 
+- É uma estrutura que representa uma eventual falha ou sucesso de uma chamada assíncrona.
+- A promise é do tipo Objeto.
 - As Promises têm  funções extras que facilitam o controle do fluxo assíncrono.
-- para criar uma nova Promise, usamos um Construtor:
+- Para criar uma nova Promise, usamos um Construtor:
 - [CONSTRUTOR]
     - Para criar a Promise, utilizamos o construtor Promise junto com o operador new.
     - Construtor é uma função especial que cria um objeto a partir de uma classe.
@@ -79,7 +80,7 @@ fetch(URL) // PROMISE
     });
     ```
 - [Estados da promise]
-    - A promise tem 3 estados. Pending , Fulfilled e Rejected.
+    - A promise tem 3 estados. `Pending` , `Fulfilled` e `Rejected`.
     - Ao executar ela entra automáticamente no estado Pending.
     - Retorna Fulfilled, se ocorreu tudo certo com sua execução.
     - Retorna Rejected, se ocorreu algum erro.
@@ -91,7 +92,7 @@ fetch(URL) // PROMISE
     - O .then() recebe o retorno de resolve.
     - O .then() é usado "em cadeia", um conceito chamado de chaining, podendo receber o retorno de outro then.
     - o .catch() recebe o retorno do reject.
-    - O .catch() também "pega" qualquer erro que acontecer dentro de qualquer .then().
+    - O .catch() também "pega" qualquer erro que acontecer dentro do .then().
 - [Fetch API]
     - é responsável por enviar requisições a APIs
     - Possui ferramentas para tratar os dados recebidos e devolvê-los, além de lidar com os erros.
@@ -103,10 +104,17 @@ npm i node-fetch
 - Async
     - Transforma qualquer função em uma promise.
     - Para usá-la, basta colocar o async antes da definição da função.
-    - Depois transformar o que é resolve em return e o que é reject em throw.
+    - Ao converter uma função em uma promise, o que é resolve vira return e o que é reject vira throw.
 - Await
     - O await só pode ser usado dentro de uma função com async
     - Faz com o que a função espere uma resposta para continuar sua execução.
+- Try{} catch(error){}.
+    -   Bloco try/catch serve para tratamento de exceções, tratamento de códigos que podem não ser totalmente atendidos e gerarem alguma exceção/erro.
+    - O try consegue recuperar erros que possam ocorrer no código fornecido em seu bloco.
+    - O catch por sua vez faz o tratamento dos erros que aconteceram.
+
+
+
 
 ### [P]
 - O que é um código que é executado de modo assíncrono? Qual é a diferença disso para um código que é executado de modo síncrono?
