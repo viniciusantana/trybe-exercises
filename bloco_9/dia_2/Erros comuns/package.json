@@ -1,0 +1,15 @@
+{
+  "name": "bloco_9",
+  "version": "1.0.0",
+  "description": "- Operações Síncronas     - Conjunto de operações que dependem do término da execução de operações anteriores para começar sua execução.     - A ordem de execução não pode ser quebrada pois uma operação afeta diretamente a outra.     - São bloqueantes - Cada comando espera o outro concluir para poder executar. - Operações Assíncronas     - Em uma requisição assíncrona, não existe sincronismo entre as requisições, sendo assim, podemos enviar diversas requisições em paralelo, onde cada resposta retorna quando estiver pronta.     - São operações que não travam o fluxo de execução, podendo ser executadas em paralelo.     - [(Vídeo) O que é código assíncrono?](https://www.youtube.com/watch?v=tVYTqsqZHZY)     - [Artigo](https://giuliana-bezerra.medium.com/operacoes-assincronas-javascript-promises-ae7553ad62b8)     - [MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Asynchronous)     - [Conceitos gerais de programação assíncrona](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Asynchronous/Concepts) - setTimeOut(função, tempo-em-milissegundos)     - Função assíncrona     - Executa um bloco de código uma vez depois de um determinado tempo     - [Timeouts e intervalos/MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals) ## [CALLBACKS] - Uma função callback é uma função passada a outra função como argumento - [DOCUMENTAÇÃO](https://developer.mozilla.org/pt-BR/docs/Glossary/Callback_function) - [(ARTIGO)ENTENDENDO FUNÇÕES CALLBACK](https://medium.com/totvsdevelopers/entendendo-fun%C3%A7%C3%B5es-callback-em-javascript-7b500dc7fa22) ## [ERROS EM OPERAÇÕES ASSINCRONAS] -  -",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
