@@ -29,7 +29,8 @@ const firstPromise = new Promise((resolve, reject) => {
   arrayNumeber.forEach((value) => acc += value);
   acc > 8000  ? reject() : 
   resolve([acc/2, acc/3, acc/5, acc/10]);
-})
+});
+firstPromise
 .then((value) => value)
 .then((value) => console.log(value.reduce((acc, atual) => acc + atual)))
 .catch(() => console.log(`É mais de 8000`));
