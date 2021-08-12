@@ -134,3 +134,88 @@ npm i node-fetch
 - Quando você vai se comunicar com uma API , tal comunicação deve ser síncrona ou assíncrona? Lembre-se de que o serviço ao qual você está se conectando pode demorar muito ou pouco para dar retorno, pode estar fora do ar etc.
 
 - Dada a resposta anterior, o que é fetch e para que ele serve?
+
+-------
+## [Bloco de notas]
+### [Instanciar nova promise Ex-gab]
+```
+const fetchPromise = () => {
+  const myPromise = new Promise((resolve, reject) => {
+
+  });
+};
+```
+```
+const fetchPromise = () => {
+  const myPromise = new Promise((resolve, reject) => {
+
+  });
+
+  myPromise
+    .then()
+    .catch();
+};
+fetchPromise();
+```
+
+### ARRAY.FROM
+- https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/from
+- https://www.youtube.com/watch?v=5fiCq2F4CTo
+- array.from(array, array.map) XXX ({0: array[0], 1: array[1], length: X}, ()=>())
+- Array com tamanho 10 e números aleatórios:
+```
+const arrayAleatorio = Array.from(
+    { length: 10 },
+    () =>  Math.floor(Math.random() * 50) + 1
+);
+```
+```
+LOG:
+ [
+    37, 17, 20, 25, 38,
+     1, 48, 24,  4, 34
+ ]
+```
+- Teste sem definir função:
+```
+
+const arrayUndefined = Array.from(
+    { length: 10 }
+);
+```
+```
+LOG:
+[
+    undefined, undefined,
+    undefined, undefined,
+    undefined, undefined,
+    undefined, undefined,
+    undefined, undefined
+] 
+```
+- outro
+```
+const arrayUndefined = Array.from(
+    { 0: 1, 1:2, 2:3,  length: 3 },
+    (x) => (x)
+);
+**LOG: [ 1, 2, 3 ]
+```
+- manipular os elementos do array
+```
+Array.from([1, 2, 3], x => x + x);
+// [2, 4, 6]
+```
+-------
+- async-try-catch
+```
+async function nomeFunc() {
+    try {
+      const nomeConst = await Promise.all([
+        fetch(url).then((response) => response.json()),
+      ]);
+    } catch (error) {
+      alert('erro!');
+    }
+}
+```
