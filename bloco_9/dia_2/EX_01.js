@@ -27,10 +27,11 @@ const firstPromise = new Promise((resolve, reject) => {
     arrayNumeber.push(randomNumber * randomNumber);
   }
   arrayNumeber.forEach((value) => acc += value);
-  acc > 8000 ? reject() : resolve();
+  acc > 8000  ? reject() : 
+  resolve([acc/2, acc/3, acc/5, acc/10]);
 })
-.then(() => console.log(`Promise resolvida`))
-.catch(() => console.log(`Promise Falhou`));
+.then((value) => console.log(`Promise resolvida`, value))
+.catch(() => console.log(`É mais de 8000`));
 
 // firstPromise();
 
