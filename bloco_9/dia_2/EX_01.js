@@ -8,7 +8,16 @@ const fetchJoke = () => {
     headers: { 'Accept': 'application/json' }
   };
 
-  fetch(API_URL, myObject);
+  fetch(API_URL, myObject)
+  .then(response => response.json())
+  .then(data => data.joke)
+  .then(joke => addJokeContainer(joke));
+
 };
+const addJokeContainer = (string) => {
+  const jokeContainer = document.querySelector('#jokeContainer');
+  jokeContainer.innerHTML = string;
+}
+
 
 window.onload = () => fetchJoke();

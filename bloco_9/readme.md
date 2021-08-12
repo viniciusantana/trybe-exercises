@@ -53,13 +53,13 @@ fetch(URL) // PROMISE
 - [(Vídeo)Como usar o método map para inserir informações na tela](https://www.youtube.com/watch?v=oQimi85ey_4)
 - [Event Loop](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
 - [(Vídeo)Aplicação com JavaScript puro: Como desenvolver uma pokedex ](https://www.youtube.com/watch?v=Uptu3NrBFBM)
-- [(Vídeo)Como JavaScript FUNCIONA? (recomendapo por RIBA JR)](https://www.youtube.com/watch?v=gb7FDfvHlGg)
+- [(Vídeo)Como JavaScript FUNCIONA? (recomendado por Riba Jr)](https://www.youtube.com/watch?v=gb7FDfvHlGg)
 
 
 # [DIA 2](https://github.com/tryber/sd-014-b-live-lectures/tree/lecture/9.2)
 ## [APLICATION PROGRAMMING INTERFACE API]
 - Uma API permite que aplicações se comuniquem umas com as outras, servindo de "ponte" para elas.
-- APIs retornam dados em response(reposta) a um request do cliente.
+- APIs retornam dados em reposta(response) a uma requisição (request) do cliente.
 - Toda API é um back-end, mas nem todo back-end é uma API.
 - Geralmente retornam dados no formato JSON . 
 - JSON significa J ava S cript O bject N otation e é basicamente uma forma de representarmos dados como objetos
