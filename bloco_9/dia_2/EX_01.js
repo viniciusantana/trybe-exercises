@@ -30,7 +30,8 @@ const firstPromise = new Promise((resolve, reject) => {
   acc > 8000  ? reject() : 
   resolve([acc/2, acc/3, acc/5, acc/10]);
 })
-.then((value) => console.log(`Promise resolvida`, value))
+.then((value) => value)
+.then((value) => console.log(value.reduce((acc, atual) => acc + atual)))
 .catch(() => console.log(`É mais de 8000`));
 
 // firstPromise();
