@@ -1,3 +1,4 @@
+ ![img](https://i.imgur.com/R36tQO0.png)
  Trybe
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Vinicius Santana](https://www.linkedin.com/in/vinicius-santana-luna/)_ durante sua formação na [Trybe](https://www.betrybe.com/) :rocket:
@@ -286,43 +287,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [ ] 38-03: Pilhas
 - [ ] 38-04: Projeto - TING - Trybe Is Not Google
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##### Bloco 35: Introdução - Ciência da Computação
-
-- [ ] 35-1: _Arquitetura de Computadores_
-- [ ] 35-2: _Arquitetura de redes_
-- [ ] 35-3: _Redes de computadores, ferramentas e segurança_
-- [ ] 35-4: _[Projeto - Explorando os protocolos]()_
-
-##### Bloco 36: Python
-
-- [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e Exceções_
-- [ ] 35-3: _Entrada e Saída de dados_
-- [ ] 36-4: _Entrada e Saída de dados_
-- [ ] 35-5: _[Projeto - Tech news]()_
-
-## Bônus
-
-##### Animações com CSS
- 
-- [x] B-1: _CSS Animations - Part 1_
-- [x] B-2: _CSS Animations - Part 2_
-- [x] B-3: _[Projeto - The Daily Prophet]()_
 
 # [...]
 
