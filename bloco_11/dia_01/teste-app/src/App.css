@@ -1,0 +1,11 @@
+.vini {
+  transition: 1.2s;
+  color: blue;
+  font-weight: 700;
+  text-align: center;
+}
+
+.vini:hover {
+  transition: 1.2s;
+  transform: scale(2.5);
+}
